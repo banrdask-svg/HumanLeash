@@ -1,0 +1,17 @@
+name: HumanLeash
+version: '${version}'
+main: com.olis.humanleash.HumanLeashPlugin
+api-version: '1.21.11'
+author: Olis
+description: Неразрывный поводок между игроками с управлением командами.
+commands:
+  leash:
+    aliases: [hleash, povodok]
+    description: Управление поводками игроков
+    usage: /leash <bind|unbind|distance|info|reload>
+    permission: humanleash.admin
+    permission-message: У вас нет права humanleash.admin.
+permissions:
+  humanleash.admin:
+    description: Привязка, снятие и настройка поводков игроков
+    default: op
